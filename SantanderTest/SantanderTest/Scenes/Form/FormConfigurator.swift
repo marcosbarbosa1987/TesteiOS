@@ -12,7 +12,7 @@ import UIKit
 extension FormController: FormPresenterOutput{
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        router.passDataToNextScene(segue: segue)
+        router.passDataToNextScene(segue: segue, sender: nil)
     }
     
 }

@@ -66,6 +66,8 @@ class HomeController: UIViewController {
                 buttonContact.backgroundColor = redSelected()
                 containerInvestiment.isHidden = true
                 containerContact.isHidden = false
+                
+                
             }
             isInvesting = false
             
@@ -109,7 +111,6 @@ extension HomeController{
     internal func configureContainerContact(){
         
         containerContact = UIView()
-        containerContact.backgroundColor = UIColor.green
         containerContact.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(containerContact)
         
@@ -118,6 +119,16 @@ extension HomeController{
         containerContact.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
         containerContact.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
         
+        let controller = FormController()
+        addChildViewController(controller)
+        controller.view.translatesAutoresizingMaskIntoConstraints = false
+        containerContact.addSubview(controller.view)
+        
+        controller.view.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive = true
+        controller.view.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -55).isActive = true
+        controller.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
+        controller.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
+        controller.didMove(toParentViewController: self)
     }
     
     internal func configureButtonInvesting(){

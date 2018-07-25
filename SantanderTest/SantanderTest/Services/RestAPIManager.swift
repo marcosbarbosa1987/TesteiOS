@@ -16,7 +16,7 @@ class RestAPIManager{
         Alamofire.request(url).responseJSON { (response) in
             
             var cellsReturn = [Cells]()
-            
+            print(response)
             if let data = response.result.value {
                 
                 if let result = data as? Dictionary<String, Any>{

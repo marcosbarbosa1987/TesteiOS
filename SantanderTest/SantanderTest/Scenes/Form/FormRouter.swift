@@ -13,6 +13,7 @@ protocol FormRouterInput {
     func showAnotherVC()
 }
 
+
 class FormRouter: FormRouterInput{
     
     weak var viewController: FormController!
@@ -21,9 +22,20 @@ class FormRouter: FormRouterInput{
         viewController.performSegue(withIdentifier: "someVC", sender: nil)
     }
     
-    func passDataToNextScene(segue: UIStoryboardSegue){
+    func passDataToNextScene(segue: UIStoryboardSegue, sender: Any?){
         
         if segue.identifier == "someVC"{
+            //let investiment = segue.destination as! InvestimentController
+            //investiment.teste =
+        }else if segue.identifier == "investiment"{
+            
+            if let cells = sender as? [Cells]{
+                let destination = segue.destination as! InvestimentController
+                destination.teste = cells
+                if cells.count > 0 {
+                    destination.updateValue()
+                }
+            }
             
         }
         

@@ -7,4 +7,5 @@ target 'SantanderTest' do
 
   # Pods for SantanderTest
     pod 'Alamofire', '~> 4.7'
+    pod 'SkyFloatingLabelTextField', '~> 3.0'
 end
