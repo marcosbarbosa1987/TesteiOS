@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  SantanderTest
 //
-//  Created by Marcos Barbosa on 20/07/2018.
-//  Copyright © 2018 n/a. All rights reserved.
+//  Created by Marcos Barbosa on 05/04/19.
+//  Copyright © 2019 Marcos Barbosa. All rights reserved.
 //
 
 import UIKit
@@ -14,17 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-//        let viewController = FormController(nibName: "main", bundle: nil)
-//        //let navigationController = UINavigationController(rootViewController: viewController)
-        
-        window = window ?? UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = HomeController()
-        window?.backgroundColor = UIColor.white
-        window?.makeKeyAndVisible()
-        
         return true
     }
 
