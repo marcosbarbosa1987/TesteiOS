@@ -19,6 +19,48 @@
 		CD04507F225C411900292596 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44F9F9225C309F0090A518 /* APIManager.swift */; };
 		CD045080225C411C00292596 /* CustomSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44F9FB225C311F0090A518 /* CustomSessionManager.swift */; };
 		CD045081225C411C00292596 /* CustomSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44F9FB225C311F0090A518 /* CustomSessionManager.swift */; };
+		CD045089225D73EF00292596 /* FinanceScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD045083225D73EF00292596 /* FinanceScreenPresenter.swift */; };
+		CD04508A225D73EF00292596 /* FinanceScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD045083225D73EF00292596 /* FinanceScreenPresenter.swift */; };
+		CD04508B225D73EF00292596 /* FinanceScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD045083225D73EF00292596 /* FinanceScreenPresenter.swift */; };
+		CD04508C225D73EF00292596 /* FinanceScreenWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD045084225D73EF00292596 /* FinanceScreenWorker.swift */; };
+		CD04508D225D73EF00292596 /* FinanceScreenWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD045084225D73EF00292596 /* FinanceScreenWorker.swift */; };
+		CD04508E225D73EF00292596 /* FinanceScreenWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD045084225D73EF00292596 /* FinanceScreenWorker.swift */; };
+		CD04508F225D73EF00292596 /* FinanceScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD045085225D73EF00292596 /* FinanceScreenRouter.swift */; };
+		CD045090225D73EF00292596 /* FinanceScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD045085225D73EF00292596 /* FinanceScreenRouter.swift */; };
+		CD045091225D73EF00292596 /* FinanceScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD045085225D73EF00292596 /* FinanceScreenRouter.swift */; };
+		CD045092225D73EF00292596 /* FinanceScreenModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD045086225D73EF00292596 /* FinanceScreenModels.swift */; };
+		CD045093225D73EF00292596 /* FinanceScreenModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD045086225D73EF00292596 /* FinanceScreenModels.swift */; };
+		CD045094225D73EF00292596 /* FinanceScreenModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD045086225D73EF00292596 /* FinanceScreenModels.swift */; };
+		CD045095225D73EF00292596 /* FinanceScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD045087225D73EF00292596 /* FinanceScreenViewController.swift */; };
+		CD045096225D73EF00292596 /* FinanceScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD045087225D73EF00292596 /* FinanceScreenViewController.swift */; };
+		CD045097225D73EF00292596 /* FinanceScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD045087225D73EF00292596 /* FinanceScreenViewController.swift */; };
+		CD045098225D73EF00292596 /* FinanceScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD045088225D73EF00292596 /* FinanceScreenInteractor.swift */; };
+		CD045099225D73EF00292596 /* FinanceScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD045088225D73EF00292596 /* FinanceScreenInteractor.swift */; };
+		CD04509A225D73EF00292596 /* FinanceScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD045088225D73EF00292596 /* FinanceScreenInteractor.swift */; };
+		CD0450E4225D81B200292596 /* DownInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0450DC225D81B200292596 /* DownInfo.swift */; };
+		CD0450E5225D81B200292596 /* DownInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0450DC225D81B200292596 /* DownInfo.swift */; };
+		CD0450E6225D81B200292596 /* DownInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0450DC225D81B200292596 /* DownInfo.swift */; };
+		CD0450E7225D81B200292596 /* MoreInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0450DD225D81B200292596 /* MoreInfo.swift */; };
+		CD0450E8225D81B200292596 /* MoreInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0450DD225D81B200292596 /* MoreInfo.swift */; };
+		CD0450E9225D81B200292596 /* MoreInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0450DD225D81B200292596 /* MoreInfo.swift */; };
+		CD0450EA225D81B200292596 /* Year.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0450DE225D81B200292596 /* Year.swift */; };
+		CD0450EB225D81B200292596 /* Year.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0450DE225D81B200292596 /* Year.swift */; };
+		CD0450EC225D81B200292596 /* Year.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0450DE225D81B200292596 /* Year.swift */; };
+		CD0450ED225D81B200292596 /* Months.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0450DF225D81B200292596 /* Months.swift */; };
+		CD0450EE225D81B200292596 /* Months.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0450DF225D81B200292596 /* Months.swift */; };
+		CD0450EF225D81B200292596 /* Months.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0450DF225D81B200292596 /* Months.swift */; };
+		CD0450F0225D81B200292596 /* FinanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0450E0225D81B200292596 /* FinanceModel.swift */; };
+		CD0450F1225D81B200292596 /* FinanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0450E0225D81B200292596 /* FinanceModel.swift */; };
+		CD0450F2225D81B200292596 /* FinanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0450E0225D81B200292596 /* FinanceModel.swift */; };
+		CD0450F3225D81B200292596 /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0450E1225D81B200292596 /* Month.swift */; };
+		CD0450F4225D81B200292596 /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0450E1225D81B200292596 /* Month.swift */; };
+		CD0450F5225D81B200292596 /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0450E1225D81B200292596 /* Month.swift */; };
+		CD0450F6225D81B200292596 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0450E2225D81B200292596 /* Info.swift */; };
+		CD0450F7225D81B200292596 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0450E2225D81B200292596 /* Info.swift */; };
+		CD0450F8225D81B200292596 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0450E2225D81B200292596 /* Info.swift */; };
+		CD0450F9225D81B200292596 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0450E3225D81B200292596 /* Screen.swift */; };
+		CD0450FA225D81B200292596 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0450E3225D81B200292596 /* Screen.swift */; };
+		CD0450FB225D81B200292596 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0450E3225D81B200292596 /* Screen.swift */; };
 		CD139559225812B3006783D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD139558225812B3006783D7 /* AppDelegate.swift */; };
 		CD13955B225812B3006783D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13955A225812B3006783D7 /* ViewController.swift */; };
 		CD13955E225812B3006783D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD13955C225812B3006783D7 /* Main.storyboard */; };
@@ -79,6 +121,20 @@
 		BC2950761AD84785AF5F964E /* Pods-SantanderTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SantanderTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SantanderTestTests/Pods-SantanderTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		CD045075225C404900292596 /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
 		CD045076225C404A00292596 /* FormsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormsModel.swift; sourceTree = "<group>"; };
+		CD045083225D73EF00292596 /* FinanceScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceScreenPresenter.swift; sourceTree = "<group>"; };
+		CD045084225D73EF00292596 /* FinanceScreenWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceScreenWorker.swift; sourceTree = "<group>"; };
+		CD045085225D73EF00292596 /* FinanceScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceScreenRouter.swift; sourceTree = "<group>"; };
+		CD045086225D73EF00292596 /* FinanceScreenModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceScreenModels.swift; sourceTree = "<group>"; };
+		CD045087225D73EF00292596 /* FinanceScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceScreenViewController.swift; sourceTree = "<group>"; };
+		CD045088225D73EF00292596 /* FinanceScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceScreenInteractor.swift; sourceTree = "<group>"; };
+		CD0450DC225D81B200292596 /* DownInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownInfo.swift; sourceTree = "<group>"; };
+		CD0450DD225D81B200292596 /* MoreInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfo.swift; sourceTree = "<group>"; };
+		CD0450DE225D81B200292596 /* Year.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Year.swift; sourceTree = "<group>"; };
+		CD0450DF225D81B200292596 /* Months.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Months.swift; sourceTree = "<group>"; };
+		CD0450E0225D81B200292596 /* FinanceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinanceModel.swift; sourceTree = "<group>"; };
+		CD0450E1225D81B200292596 /* Month.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
+		CD0450E2225D81B200292596 /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		CD0450E3225D81B200292596 /* Screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		CD139555225812B3006783D7 /* SantanderTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SantanderTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD139558225812B3006783D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD13955A225812B3006783D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +212,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CD045082225D731400292596 /* FinanceScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CD045083225D73EF00292596 /* FinanceScreenPresenter.swift */,
+				CD045084225D73EF00292596 /* FinanceScreenWorker.swift */,
+				CD045085225D73EF00292596 /* FinanceScreenRouter.swift */,
+				CD045086225D73EF00292596 /* FinanceScreenModels.swift */,
+				CD045087225D73EF00292596 /* FinanceScreenViewController.swift */,
+				CD045088225D73EF00292596 /* FinanceScreenInteractor.swift */,
+			);
+			path = FinanceScreen;
+			sourceTree = "<group>";
+		};
+		CD04509B225D763500292596 /* FinanceModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD0450DC225D81B200292596 /* DownInfo.swift */,
+				CD0450E0225D81B200292596 /* FinanceModel.swift */,
+				CD0450E2225D81B200292596 /* Info.swift */,
+				CD0450E1225D81B200292596 /* Month.swift */,
+				CD0450DF225D81B200292596 /* Months.swift */,
+				CD0450DD225D81B200292596 /* MoreInfo.swift */,
+				CD0450E3225D81B200292596 /* Screen.swift */,
+				CD0450DE225D81B200292596 /* Year.swift */,
+			);
+			path = FinanceModel;
+			sourceTree = "<group>";
+		};
 		CD13954C225812B3006783D7 = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +307,7 @@
 		CD44F9D8225C25940090A518 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CD045082225D731400292596 /* FinanceScreen */,
 				CD44F9D9225C25990090A518 /* FormScreen */,
 			);
 			path = Scenes;
@@ -252,6 +337,7 @@
 		CD44F9F7225C308B0090A518 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CD04509B225D763500292596 /* FinanceModel */,
 				CD44F9FD225C31EC0090A518 /* FormsModel */,
 				CD44F9F8225C30920090A518 /* APIManager */,
 			);
@@ -506,18 +592,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD0450EA225D81B200292596 /* Year.swift in Sources */,
 				CD44F9E6225C27B70090A518 /* FormScreenRouter.swift in Sources */,
+				CD0450E4225D81B200292596 /* DownInfo.swift in Sources */,
+				CD0450F6225D81B200292596 /* Info.swift in Sources */,
 				CD045078225C404A00292596 /* FormsModel.swift in Sources */,
+				CD0450F9225D81B200292596 /* Screen.swift in Sources */,
 				CD045079225C411000292596 /* Cells.swift in Sources */,
+				CD045098225D73EF00292596 /* FinanceScreenInteractor.swift in Sources */,
+				CD045095225D73EF00292596 /* FinanceScreenViewController.swift in Sources */,
 				CD44F9E0225C27B70090A518 /* FormScreenPresenter.swift in Sources */,
+				CD0450F3225D81B200292596 /* Month.swift in Sources */,
 				CD44F9FA225C309F0090A518 /* APIManager.swift in Sources */,
+				CD0450E7225D81B200292596 /* MoreInfo.swift in Sources */,
+				CD0450F0225D81B200292596 /* FinanceModel.swift in Sources */,
 				CD13955B225812B3006783D7 /* ViewController.swift in Sources */,
 				CD44F9E3225C27B70090A518 /* FormScreenWorker.swift in Sources */,
 				CD44F9EC225C27B70090A518 /* FormScreenViewController.swift in Sources */,
+				CD04508C225D73EF00292596 /* FinanceScreenWorker.swift in Sources */,
+				CD04508F225D73EF00292596 /* FinanceScreenRouter.swift in Sources */,
 				CD44F9E9225C27B70090A518 /* FormScreenModels.swift in Sources */,
+				CD045089225D73EF00292596 /* FinanceScreenPresenter.swift in Sources */,
 				CD139559225812B3006783D7 /* AppDelegate.swift in Sources */,
 				CD44F9EF225C27B70090A518 /* FormScreenInteractor.swift in Sources */,
 				CD44F9FC225C311F0090A518 /* CustomSessionManager.swift in Sources */,
+				CD045092225D73EF00292596 /* FinanceScreenModels.swift in Sources */,
+				CD0450ED225D81B200292596 /* Months.swift in Sources */,
 				CD44F9F4225C2EDF0090A518 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,17 +627,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD44F9EA225C27B70090A518 /* FormScreenModels.swift in Sources */,
+				CD045099225D73EF00292596 /* FinanceScreenInteractor.swift in Sources */,
 				CD44F9E4225C27B70090A518 /* FormScreenWorker.swift in Sources */,
+				CD0450FA225D81B200292596 /* Screen.swift in Sources */,
 				CD44F9ED225C27B70090A518 /* FormScreenViewController.swift in Sources */,
+				CD045090225D73EF00292596 /* FinanceScreenRouter.swift in Sources */,
 				CD045080225C411C00292596 /* CustomSessionManager.swift in Sources */,
 				CD44F9E1225C27B70090A518 /* FormScreenPresenter.swift in Sources */,
+				CD0450F1225D81B200292596 /* FinanceModel.swift in Sources */,
+				CD04508A225D73EF00292596 /* FinanceScreenPresenter.swift in Sources */,
+				CD0450EE225D81B200292596 /* Months.swift in Sources */,
+				CD045096225D73EF00292596 /* FinanceScreenViewController.swift in Sources */,
 				CD04507E225C411900292596 /* APIManager.swift in Sources */,
 				CD04507A225C411000292596 /* Cells.swift in Sources */,
 				CD04507C225C411400292596 /* FormsModel.swift in Sources */,
 				CD44F9E7225C27B70090A518 /* FormScreenRouter.swift in Sources */,
+				CD0450EB225D81B200292596 /* Year.swift in Sources */,
 				CD44F9F0225C27B70090A518 /* FormScreenInteractor.swift in Sources */,
+				CD045093225D73EF00292596 /* FinanceScreenModels.swift in Sources */,
 				CD13956E225812B6006783D7 /* SantanderTestTests.swift in Sources */,
+				CD0450E8225D81B200292596 /* MoreInfo.swift in Sources */,
+				CD0450F4225D81B200292596 /* Month.swift in Sources */,
+				CD04508D225D73EF00292596 /* FinanceScreenWorker.swift in Sources */,
 				CD44F9F5225C2EDF0090A518 /* Constants.swift in Sources */,
+				CD0450F7225D81B200292596 /* Info.swift in Sources */,
+				CD0450E5225D81B200292596 /* DownInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,17 +660,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD44F9EB225C27B70090A518 /* FormScreenModels.swift in Sources */,
+				CD04509A225D73EF00292596 /* FinanceScreenInteractor.swift in Sources */,
 				CD44F9E5225C27B70090A518 /* FormScreenWorker.swift in Sources */,
+				CD0450FB225D81B200292596 /* Screen.swift in Sources */,
 				CD44F9EE225C27B70090A518 /* FormScreenViewController.swift in Sources */,
+				CD045091225D73EF00292596 /* FinanceScreenRouter.swift in Sources */,
 				CD045081225C411C00292596 /* CustomSessionManager.swift in Sources */,
 				CD44F9E2225C27B70090A518 /* FormScreenPresenter.swift in Sources */,
+				CD0450F2225D81B200292596 /* FinanceModel.swift in Sources */,
+				CD04508B225D73EF00292596 /* FinanceScreenPresenter.swift in Sources */,
+				CD0450EF225D81B200292596 /* Months.swift in Sources */,
+				CD045097225D73EF00292596 /* FinanceScreenViewController.swift in Sources */,
 				CD04507F225C411900292596 /* APIManager.swift in Sources */,
 				CD04507B225C411100292596 /* Cells.swift in Sources */,
 				CD04507D225C411500292596 /* FormsModel.swift in Sources */,
 				CD44F9E8225C27B70090A518 /* FormScreenRouter.swift in Sources */,
+				CD0450EC225D81B200292596 /* Year.swift in Sources */,
 				CD44F9F1225C27B70090A518 /* FormScreenInteractor.swift in Sources */,
+				CD045094225D73EF00292596 /* FinanceScreenModels.swift in Sources */,
 				CD139579225812B6006783D7 /* SantanderTestUITests.swift in Sources */,
+				CD0450E9225D81B200292596 /* MoreInfo.swift in Sources */,
+				CD0450F5225D81B200292596 /* Month.swift in Sources */,
+				CD04508E225D73EF00292596 /* FinanceScreenWorker.swift in Sources */,
 				CD44F9F6225C2EDF0090A518 /* Constants.swift in Sources */,
+				CD0450F8225D81B200292596 /* Info.swift in Sources */,
+				CD0450E6225D81B200292596 /* DownInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

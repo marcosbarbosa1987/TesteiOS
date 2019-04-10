@@ -18,7 +18,7 @@ import SwiftyJSON
 class FormScreenWorker: NSObject {
     
     
-    func getFormsFromAPI(request: FormScreen.Something.Request, completion:@escaping(FormScreen.Something.Response) -> Void) {
+    func getFormsFromAPI(request: FormScreen.Data.Request, completion:@escaping(FormScreen.Data.Response) -> Void) {
         
         APIManager.get(request.url, completion: { (response, error) in
             if let data = response as? Data {
@@ -29,17 +29,17 @@ class FormScreenWorker: NSObject {
                     
                     if (response.cells?.count)! > 0 {
                         
-                        completion(FormScreen.Something.Response.init(isError: false, data: response))
+                        completion(FormScreen.Data.Response.init(isError: false, data: response))
                     } else {
-                        completion(FormScreen.Something.Response.init(isError: true, data: nil))
+                        completion(FormScreen.Data.Response.init(isError: true, data: nil))
                     }
                     
                 } else {
-                    completion(FormScreen.Something.Response.init(isError: true, data: nil))
+                    completion(FormScreen.Data.Response.init(isError: true, data: nil))
                 }
                 
             } else {
-                completion(FormScreen.Something.Response.init(isError: true, data: nil))
+                completion(FormScreen.Data.Response.init(isError: true, data: nil))
             }
         })
     }

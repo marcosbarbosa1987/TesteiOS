@@ -13,7 +13,7 @@
 import UIKit
 
 protocol FormScreenPresentationLogic {
-  func presentForms(response: FormScreen.Something.Response)
+  func presentForms(response: FormScreen.Data.Response)
 }
 
 class FormScreenPresenter: FormScreenPresentationLogic {
@@ -21,18 +21,18 @@ class FormScreenPresenter: FormScreenPresentationLogic {
   
   // MARK: Do something
   
-  func presentForms(response: FormScreen.Something.Response) {
+  func presentForms(response: FormScreen.Data.Response) {
     
     
     if response.isError {
         viewController?.displayMessageError()
     } else {
         
-        var viewModel = [FormScreen.Something.ViewModel]()
+        var viewModel = [FormScreen.Data.ViewModel]()
         
         for i in (response.data?.cells)! {
             
-            let data = FormScreen.Something.ViewModel.init(id: i.id ?? -1, type: i.type ?? nil, message: i.message ?? "", typefield: i.typefield ?? nil, hidden: i.hidden ?? false, topSpacing: i.topSpacing ?? 0.0, show: i.show ?? "", required: i.required ?? false)
+            let data = FormScreen.Data.ViewModel.init(id: i.id ?? -1, type: i.type ?? nil, message: i.message ?? "", typefield: i.typefield ?? nil, hidden: i.hidden ?? false, topSpacing: i.topSpacing ?? 0.0, show: i.show ?? "", required: i.required ?? false)
             
             viewModel.append(data)
         }

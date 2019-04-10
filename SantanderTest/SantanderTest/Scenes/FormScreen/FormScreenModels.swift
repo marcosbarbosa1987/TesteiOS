@@ -15,7 +15,7 @@ import UIKit
 enum FormScreen {
   // MARK: Use cases
   
-  enum Something {
+  enum Data {
     struct Request {
         var url: String
     }
@@ -36,11 +36,3 @@ enum FormScreen {
   }
 }
 
-//"id": 1,
-//"type": 2,
-//"message": "OlÃ¡, primeiro se apresente com o seu nome:",
-//"typefield": null,
-//"hidden": false,
-//"topSpacing": 60.0,
-//"show": null,
-//"required": false

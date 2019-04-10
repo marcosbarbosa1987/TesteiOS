@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MLz-Cj-e2M">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,19 +10,244 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Form Screen View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--View Controller-->
+        <scene sceneID="Vet-0v-YC9">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FormScreenViewController" customModule="SantanderTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="OeX-8L-Gd2" customClass="ViewController" customModule="SantanderTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H3e-QV-BmE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="YD6-Ij-Hgd">
+                                <rect key="frame" x="0.0" y="550" width="375" height="53"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnr-Zq-wzp">
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="53"/>
+                                        <color key="backgroundColor" red="0.79345077276229858" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Investimento">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="goFinanceButtonClicked:" destination="OeX-8L-Gd2" eventType="touchUpInside" id="RZa-3u-qPT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbw-z6-wmt">
+                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="53"/>
+                                        <color key="backgroundColor" red="0.86482411623001099" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Contato">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="goFormsButtonClicked:" destination="OeX-8L-Gd2" eventType="touchUpInside" id="Tx3-2r-ppi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="DIY-dY-cmj"/>
+                                </constraints>
+                            </stackView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SOq-YZ-QcL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="548"/>
+                                <connections>
+                                    <segue destination="XAv-nE-jJt" kind="embed" id="M0n-UK-f9m"/>
+                                </connections>
+                            </containerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Pp1-B4-Cgg">
+                                <rect key="frame" x="0.0" y="548" width="375" height="2"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQQ-gc-vhu">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="2"/>
+                                        <color key="backgroundColor" red="0.79342406988143921" green="0.00052068859804421663" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ecs-ko-5lw">
+                                        <rect key="frame" x="188" y="0.0" width="187" height="2"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="i4f-3B-ppR"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8l9-N5-TSX" firstAttribute="trailing" secondItem="YD6-Ij-Hgd" secondAttribute="trailing" id="3lt-EY-nIy"/>
+                            <constraint firstItem="SOq-YZ-QcL" firstAttribute="leading" secondItem="8l9-N5-TSX" secondAttribute="leading" id="AeD-gD-GXD"/>
+                            <constraint firstItem="8l9-N5-TSX" firstAttribute="trailing" secondItem="SOq-YZ-QcL" secondAttribute="trailing" id="MjN-k0-epe"/>
+                            <constraint firstItem="Pp1-B4-Cgg" firstAttribute="top" secondItem="SOq-YZ-QcL" secondAttribute="bottom" id="Pel-5d-pqh"/>
+                            <constraint firstItem="Pp1-B4-Cgg" firstAttribute="leading" secondItem="8l9-N5-TSX" secondAttribute="leading" id="R6k-cd-j6y"/>
+                            <constraint firstItem="8l9-N5-TSX" firstAttribute="trailing" secondItem="Pp1-B4-Cgg" secondAttribute="trailing" id="X9y-nf-u6u"/>
+                            <constraint firstItem="SOq-YZ-QcL" firstAttribute="top" secondItem="8l9-N5-TSX" secondAttribute="top" id="Xoq-d3-5BZ"/>
+                            <constraint firstItem="YD6-Ij-Hgd" firstAttribute="top" secondItem="Pp1-B4-Cgg" secondAttribute="bottom" id="ZYS-dI-Noj"/>
+                            <constraint firstItem="YD6-Ij-Hgd" firstAttribute="bottom" secondItem="8l9-N5-TSX" secondAttribute="bottom" id="ZaD-TE-ih3"/>
+                            <constraint firstItem="YD6-Ij-Hgd" firstAttribute="leading" secondItem="8l9-N5-TSX" secondAttribute="leading" id="rJr-eh-0iL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8l9-N5-TSX"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ux6-6Y-rlF">
+                        <barButtonItem key="rightBarButtonItem" width="5" systemItem="action" id="1Tp-b9-92j">
+                            <inset key="largeContentSizeImageInsets" minX="0.0" minY="1" maxX="0.0" maxY="1"/>
+                            <color key="tintColor" red="0.86477720739999997" green="0.0017631947990000001" blue="3.874525646e-06" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="contactButton" destination="Tbw-z6-wmt" id="EI7-IN-c9L"/>
+                        <outlet property="containverView" destination="SOq-YZ-QcL" id="hjS-9t-rsk"/>
+                        <outlet property="investimentButton" destination="xnr-Zq-wzp" id="GLj-qp-t5J"/>
+                        <outlet property="sharedButton" destination="1Tp-b9-92j" id="zIY-Nv-ISz"/>
+                        <outlet property="stackButtons" destination="YD6-Ij-Hgd" id="PVx-Qg-wJv"/>
+                        <outlet property="viewContactSelected" destination="Ecs-ko-5lw" id="B4L-nO-uWa"/>
+                        <outlet property="viewInvestimentSelected" destination="dQQ-gc-vhu" id="vNZ-fE-kXJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R0m-V4-kxn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="392.80000000000001" y="682.3088455772114"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xst-BG-Wa8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MLz-Cj-e2M" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="T1x-BE-ag4">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.19997376203536987" green="0.20001503825187683" blue="0.19997116923332214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.19997376203536987" green="0.20001503825187683" blue="0.19997116923332214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OeX-8L-Gd2" kind="relationship" relationship="rootViewController" id="lCN-kq-MAb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Pv-TC-G37" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-546.39999999999998" y="682.3088455772114"/>
+        </scene>
+        <!--Finance Screen View Controller-->
+        <scene sceneID="kKF-9V-j0O">
+            <objects>
+                <viewController storyboardIdentifier="FinanceScreenViewController" id="Tj1-GL-xzv" customClass="FinanceScreenViewController" customModule="SantanderTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LQR-xD-L0I">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJZ-cr-uO7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PNY-Fu-BXb">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GmO-bc-sVy">
+                                                <rect key="frame" x="174.5" y="25" width="26" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fundName" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Seo-EM-544">
+                                                <rect key="frame" x="40" y="55" width="295" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spearador" translatesAutoresizingMaskIntoConstraints="NO" id="hnj-mN-4eh">
+                                                <rect key="frame" x="16" y="107" width="343" height="5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="5" id="KaC-1d-B75"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSa-AB-Da2">
+                                                <rect key="frame" x="40" y="597" width="295" height="50"/>
+                                                <color key="backgroundColor" red="0.86482411623001099" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="440-R2-2VX"/>
+                                                </constraints>
+                                                <state key="normal" title="Investir">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="hnj-mN-4eh" secondAttribute="trailing" constant="16" id="8qw-jU-eam"/>
+                                            <constraint firstAttribute="bottom" secondItem="nSa-AB-Da2" secondAttribute="bottom" constant="20" id="FTW-JI-6Sz"/>
+                                            <constraint firstItem="GmO-bc-sVy" firstAttribute="top" secondItem="PNY-Fu-BXb" secondAttribute="top" constant="25" id="KSD-Q5-XND"/>
+                                            <constraint firstItem="nSa-AB-Da2" firstAttribute="leading" secondItem="PNY-Fu-BXb" secondAttribute="leading" constant="40" id="MXT-3l-2Ba"/>
+                                            <constraint firstItem="Seo-EM-544" firstAttribute="leading" secondItem="PNY-Fu-BXb" secondAttribute="leading" constant="40" id="NEt-36-voR"/>
+                                            <constraint firstItem="nSa-AB-Da2" firstAttribute="top" secondItem="hnj-mN-4eh" secondAttribute="bottom" priority="999" constant="485" id="RdE-ys-1qR"/>
+                                            <constraint firstItem="hnj-mN-4eh" firstAttribute="top" secondItem="Seo-EM-544" secondAttribute="bottom" constant="16" id="XFL-0A-N1u"/>
+                                            <constraint firstAttribute="trailing" secondItem="Seo-EM-544" secondAttribute="trailing" constant="40" id="ahT-XD-QZe"/>
+                                            <constraint firstItem="hnj-mN-4eh" firstAttribute="leading" secondItem="PNY-Fu-BXb" secondAttribute="leading" constant="16" id="dca-YB-4Bg"/>
+                                            <constraint firstItem="GmO-bc-sVy" firstAttribute="centerX" secondItem="PNY-Fu-BXb" secondAttribute="centerX" id="hdK-rQ-TEt"/>
+                                            <constraint firstItem="Seo-EM-544" firstAttribute="top" secondItem="GmO-bc-sVy" secondAttribute="bottom" constant="12" id="jPs-Qf-v5i"/>
+                                            <constraint firstAttribute="trailing" secondItem="nSa-AB-Da2" secondAttribute="trailing" constant="40" id="rcd-bh-pcv"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="PNY-Fu-BXb" secondAttribute="bottom" id="LLB-tf-TLK"/>
+                                    <constraint firstAttribute="trailing" secondItem="PNY-Fu-BXb" secondAttribute="trailing" id="gAn-nk-XkU"/>
+                                    <constraint firstItem="PNY-Fu-BXb" firstAttribute="top" secondItem="JJZ-cr-uO7" secondAttribute="top" id="h4C-7z-Zty"/>
+                                    <constraint firstItem="PNY-Fu-BXb" firstAttribute="leading" secondItem="JJZ-cr-uO7" secondAttribute="leading" id="heB-Cc-eLF"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JJZ-cr-uO7" secondAttribute="trailing" id="ANS-rh-a1t"/>
+                            <constraint firstItem="JJZ-cr-uO7" firstAttribute="width" secondItem="LQR-xD-L0I" secondAttribute="width" id="GX6-t4-2hB"/>
+                            <constraint firstAttribute="bottom" secondItem="JJZ-cr-uO7" secondAttribute="bottom" id="MfB-dv-7JU"/>
+                            <constraint firstItem="PNY-Fu-BXb" firstAttribute="width" secondItem="LQR-xD-L0I" secondAttribute="width" id="bDG-tk-k5i"/>
+                            <constraint firstItem="PNY-Fu-BXb" firstAttribute="height" secondItem="LQR-xD-L0I" secondAttribute="height" priority="250" id="cQc-v5-nop"/>
+                            <constraint firstItem="JJZ-cr-uO7" firstAttribute="height" secondItem="LQR-xD-L0I" secondAttribute="height" priority="250" id="pwt-O4-69M"/>
+                            <constraint firstItem="JJZ-cr-uO7" firstAttribute="top" secondItem="LQR-xD-L0I" secondAttribute="top" id="qxE-6c-ED6"/>
+                            <constraint firstItem="JJZ-cr-uO7" firstAttribute="leading" secondItem="LQR-xD-L0I" secondAttribute="leading" id="r11-Nz-abm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonInvestiment" destination="nSa-AB-Da2" id="uNQ-1m-ZbF"/>
+                        <outlet property="fundNameLabel" destination="Seo-EM-544" id="bof-K5-7Ig"/>
+                        <outlet property="titleLabel" destination="GmO-bc-sVy" id="O5Q-id-Bdw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vaz-FN-c6S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1236" y="124.58770614692655"/>
+        </scene>
+        <!--Form Screen View Controller-->
+        <scene sceneID="BTh-Jo-rJx">
+            <objects>
+                <viewController storyboardIdentifier="FormScreenViewController" id="VgP-yY-hM8" customClass="FormScreenViewController" customModule="SantanderTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G02-J3-T6G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BXF-y0-ORn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1236" y="860"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tBL-lA-qcj">
+            <objects>
+                <viewController id="XAv-nE-jJt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tPf-nZ-S6n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hYA-Ik-kJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="393" y="0.0"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Spearador" width="315" height="7"/>
+    </resources>
 </document>

@@ -13,7 +13,7 @@
 import UIKit
 
 protocol FormScreenBusinessLogic {
-    func getFormsDetails(request: FormScreen.Something.Request)
+    func getFormsDetails(request: FormScreen.Data.Request)
 }
 
 protocol FormScreenDataStore {
@@ -26,7 +26,7 @@ class FormScreenInteractor: FormScreenBusinessLogic, FormScreenDataStore {
     //var name: String = ""
     
     
-    func getFormsDetails(request: FormScreen.Something.Request) {
+    func getFormsDetails(request: FormScreen.Data.Request) {
         worker = FormScreenWorker()
         
         
