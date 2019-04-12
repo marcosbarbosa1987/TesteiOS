@@ -24,6 +24,24 @@ class FinanceScreenViewController: UIViewController, FinanceScreenDisplayLogic {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var fundNameLabel: UILabel!
     @IBOutlet weak var buttonInvestiment: UIButton!
+    @IBOutlet weak var whatISLabel: UILabel!
+    @IBOutlet weak var definitionLabel: UILabel!
+    @IBOutlet weak var riskTitleLabel: UILabel!
+    @IBOutlet weak var infoTitleLabel: UILabel!
+    
+    
+    @IBOutlet weak var riskOneHeight: NSLayoutConstraint!
+    @IBOutlet weak var riskTwoHeight: NSLayoutConstraint!
+    @IBOutlet weak var riskThreeHeight: NSLayoutConstraint!
+    @IBOutlet weak var riskFourHeight: NSLayoutConstraint!
+    @IBOutlet weak var riskFiveHeight: NSLayoutConstraint!
+    
+    @IBOutlet weak var riskOneArrow: UIImageView!
+    @IBOutlet weak var riskTwoArrow: UIImageView!
+    @IBOutlet weak var riskThreeArrow: UIImageView!
+    @IBOutlet weak var riskFourArrow: UIImageView!
+    @IBOutlet weak var riskFiveArrow: UIImageView!
+    
     
     
     // MARK: Object lifecycle
@@ -68,7 +86,9 @@ class FinanceScreenViewController: UIViewController, FinanceScreenDisplayLogic {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         doSomething()
+        configureRisk(risk: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -90,10 +110,62 @@ class FinanceScreenViewController: UIViewController, FinanceScreenDisplayLogic {
         //nameTextField.text = viewModel.name
         self.titleLabel.text = viewModel.data.screen?.title
         self.fundNameLabel.text = viewModel.data.screen?.fundName
+        self.whatISLabel.text = viewModel.data.screen?.whatIs
+        self.definitionLabel.text = viewModel.data.screen?.definition
+        self.riskTitleLabel.text = viewModel.data.screen?.riskTitle
+        self.configureRisk(risk: viewModel.data.screen?.risk)
+        self.infoTitleLabel.text = viewModel.data.screen?.infoTitle
+        
         self.buttonInvestiment.layer.cornerRadius = self.buttonInvestiment.frame.height/2
     }
     
     func showErrorMessage() {
         
+    }
+    
+    func configureRisk(risk: Int?) {
+        
+        self.riskOneArrow.isHidden = true
+        self.riskTwoArrow.isHidden = true
+        self.riskThreeArrow.isHidden = true
+        self.riskFourArrow.isHidden = true
+        self.riskFiveArrow.isHidden = true
+        
+        self.riskOneHeight.constant = 5
+        self.riskTwoHeight.constant = 5
+        self.riskThreeHeight.constant = 5
+        self.riskFourHeight.constant = 5
+        self.riskFiveHeight.constant = 5
+        
+        if let _risk = risk {
+            
+            switch _risk {
+                
+            case 1:
+                self.riskOneArrow.isHidden = false
+                self.riskOneHeight.constant = 10
+                
+            case 2:
+                self.riskTwoArrow.isHidden = false
+                self.riskTwoHeight.constant = 10
+                
+            case 3:
+                self.riskThreeArrow.isHidden = false
+                self.riskThreeHeight.constant = 10
+                
+            case 4:
+                self.riskFourArrow.isHidden = false
+                self.riskFourHeight.constant = 10
+                
+            case 5:
+                self.riskFiveArrow.isHidden = false
+                self.riskFiveHeight.constant = 10
+                
+            default:
+                break
+                
+            }
+            
+        }
     }
 }
